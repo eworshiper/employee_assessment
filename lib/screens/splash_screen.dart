@@ -1,5 +1,5 @@
 import 'dart:async';
-// import 'dart:html';
+import 'dart:html';
 
 import 'package:dashboard/screens/login_screen.dart';
 import 'package:flutter/material.dart';
@@ -16,8 +16,9 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   void initState() {
-    Timer(const Duration(seconds: 10), () {
-      Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (_)=>LoginPage()), (route) => false);
+    Timer(const Duration(seconds: 3), () {
+      Navigator.pushNamedAndRemoveUntil(
+        context, '/get-started', (route) => false);
     });
 
     super.initState();   
@@ -28,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return const Scaffold(
       body: Center(
          child: Icon(
-              Icons.person,
+              Icons.work,
               size: 180,
               color: kDarkBlue,
         )

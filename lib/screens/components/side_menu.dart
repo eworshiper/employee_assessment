@@ -1,7 +1,7 @@
+import 'package:dashboard/screens/team_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:ternav_icons/ternav_icons.dart';
-
-import '../../constant.dart';
+import '../main_screen.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({
@@ -23,17 +23,12 @@ class SideMenu extends StatelessWidget {
           DrawerListTile(
             icon: TernavIcons.lightOutline.home_2,
             title: "Home",
-            onTap: () {},
+            onTap: () {Navigator.push(context,MaterialPageRoute(builder: (context) => MainScreen()));},
           ),
           DrawerListTile(
             icon: TernavIcons.lightOutline.user_2,
             title: "My Team",
-            onTap: () {},
-          ),
-          DrawerListTile(
-            icon: TernavIcons.lightOutline.menu,
-            title: "My Project",
-            onTap: () {},
+            onTap: () {Navigator.push(context,MaterialPageRoute(builder: (context) => TeamScreen()));},
           ),
           DrawerListTile(
             icon: TernavIcons.lightOutline.settings,
