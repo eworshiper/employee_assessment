@@ -1,3 +1,4 @@
+import 'package:dashboard/screens/admin_screen.dart';
 import 'package:dashboard/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(fontFamily: "Poppins"),
-      home: const MainScreen(),
+      home: const AdminScreen(),
     );
   }
 }
