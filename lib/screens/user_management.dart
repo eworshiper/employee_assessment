@@ -3,6 +3,7 @@ import 'package:dashboard/screens/components/chart_container.dart';
 import 'package:dashboard/widgets/activity_header.dart';
 import 'package:dashboard/widgets/bar_chart.dart';
 import 'package:dashboard/widgets/courses_grid.dart';
+import 'package:dashboard/widgets/team_list.dart';
 import 'package:flutter/material.dart';
 
 import '../constant.dart';
@@ -96,7 +97,7 @@ class UserManagement extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              const CourseGrid(),
+              const TeamList(),
               const SizedBox(
                 height: 20,
               ),
