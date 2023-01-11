@@ -3,8 +3,8 @@ import 'package:dashboard/model/project_model.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
-class CourseGrid extends StatelessWidget {
-  const CourseGrid({Key? key}) : super(key: key);
+class ProjectGrid extends StatelessWidget {
+  const ProjectGrid({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -52,15 +52,6 @@ class CourseGrid extends StatelessWidget {
                       )
                     ],
                   ),
-                  // Column(
-                  //   mainAxisAlignment: MainAxisAlignment.center,
-                  //   children: [
-                  //     Image.asset(
-                  //       course[index].imageUrl,
-                  //       height: 110,
-                  //     )
-                  //   ],
-                  // )
                 ],
               ),
             ),

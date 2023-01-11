@@ -2,6 +2,7 @@ import 'package:dashboard/constant.dart';
 import 'package:flutter/material.dart';
 
 import '../model/project_model.dart';
+import '../model/team_model.dart';
 
 final List<Project> project = [
   Project(
@@ -22,4 +23,32 @@ final List<Project> project = [
       percent: 25,
       backImage: "images/box/box3.png",
       color: kGreen),
+];
+
+final List<Team> team = [
+  Team(
+    nama: 'Arlene McCoy',
+    role: 'Front-End Developer',
+    backImage: "images/box/box1.png"),
+    
+  Team(
+    nama: 'Bessie Cooper',
+    role: 'Front-End Developer',
+    backImage: "images/box/box2.png"),
+  Team(
+    nama: 'Ronald Richards',
+    role: 'Front-End Developer',
+    backImage: "images/box/box3.png"),
+  Team(
+    nama: 'Albert Flores',
+    role: 'UI/UX Designer',
+    backImage: "images/box/box1.png"),
+  Team(
+    nama: 'Esther Howard',
+    role: 'Software Tester',
+    backImage: "images/box/box2.png"),
+  Team(
+    nama: 'Cody Fisher',
+    role: 'Business Analyst',
+    backImage: "images/box/box3.png"),  
 ];

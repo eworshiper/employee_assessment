@@ -1,6 +1,7 @@
-import 'package:dashboard/screens/admin_screen.dart';
 import 'package:dashboard/screens/main_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:dashboard/screens/login_screen.dart';
+import 'package:dashboard/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(fontFamily: "Poppins"),
-      home: const AdminScreen(),
+      home: const MainScreen(),
     );
   }
 }
