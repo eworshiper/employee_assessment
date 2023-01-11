@@ -29,26 +29,25 @@ final List<Team> team = [
   Team(
     nama: 'Arlene McCoy',
     role: 'Front-End Developer',
-    backImage: "images/box/box1.png"),
-    
+    userImage: "images/box/box1.png"),
   Team(
     nama: 'Bessie Cooper',
     role: 'Front-End Developer',
-    backImage: "images/box/box2.png"),
+    userImage: "images/box/box2.png"),
   Team(
     nama: 'Ronald Richards',
     role: 'Front-End Developer',
-    backImage: "images/box/box3.png"),
+    userImage: "images/box/box3.png"),
   Team(
     nama: 'Albert Flores',
     role: 'UI/UX Designer',
-    backImage: "images/box/box1.png"),
+    userImage: "images/box/box1.png"),
   Team(
     nama: 'Esther Howard',
     role: 'Software Tester',
-    backImage: "images/box/box2.png"),
+    userImage: "images/box/box2.png"),
   Team(
     nama: 'Cody Fisher',
     role: 'Business Analyst',
-    backImage: "images/box/box3.png"),  
+    userImage: "images/box/box3.png"),  
 ];

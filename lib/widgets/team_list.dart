@@ -1,5 +1,4 @@
 import 'package:dashboard/data/data.dart';
-import 'package:dashboard/model/team_model.dart';
 import 'package:flutter/material.dart';
 
 class TeamList extends StatelessWidget {
@@ -12,36 +11,19 @@ class TeamList extends StatelessWidget {
         physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            childAspectRatio: 16 / 7, crossAxisCount: 1, mainAxisSpacing: 20),
+            childAspectRatio: 16 / 3, crossAxisCount: 1, mainAxisSpacing: 10),
         itemBuilder: (context, index) {
-          return Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(team[index].backImage), fit: BoxFit.fill),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Text(
-                        team[index].nama,
-                        style: const TextStyle(color: Colors.white, fontSize: 26, fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        team[index].role,
-                        style: const TextStyle(color: Colors.white),
-                      ),
-                    ],
-                  ),
-                ],
+          return Card(
+            child: ListTile(
+              leading: CircleAvatar(
+                backgroundImage: AssetImage(team[index].userImage),
               ),
+              title: Text(team[index].nama),
+              subtitle: Text(team[index].role),
+              trailing: IconButton(icon: Icon(Icons.navigate_next), onPressed: () {}),
             ),
           );
-        });
+        }
+      );
   }
 }
