@@ -68,6 +68,17 @@ class AddUser extends StatelessWidget {
                Container(
                     padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
                     child: TextField(
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(90.0),
+                        ),
+                        labelText: "Email",
+                      ),
+                    ),
+                  ),
+               Container(
+                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+                    child: TextField(
                       obscureText: true,
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -84,7 +95,7 @@ class AddUser extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           minimumSize: const Size.fromHeight(50),
                         ),
-                        child: const Text("Log In"),
+                        child: const Text("Tambah"),
                         onPressed: () {},
                       )
                   ),
